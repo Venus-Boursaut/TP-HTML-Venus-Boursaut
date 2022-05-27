@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La correction du TP numero 3 de M.Moy">
+    <link rel="icon" type="" href="https://64x64.tumblr.com/post/79574801905"> <!--insere un favicon-->
+    <title>TP numero 3 Correction</title>
+</head>
+
+
+
+
+<body>
+  <header> <!--Systematiquement mettre le titre dans le header-->
+   <h1>Boursaut Vénus- Les Tablaeux</h1> 
+</header>
+
+
+
+
+    <main>
+        <section id="exercice1">
+            <h2>Mon premier tableau</h2>
+            <table border="1">
+                <!--je ne peux pas aligner le texte sauf en mettent align="center" W3C le considere comme obsoléte utilisable seulement avec CSS-->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <th>001</th>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advence</td>
+                    </tr>
+        
+                    <tr>
+                        <th>002</th>
+                        <td>Rayman 2</td>
+                        <td>Dreamcast</td>
+                    </tr>
+        
+                    <tr>
+                        <th>003</th>
+                        <td>Wario Ware</td>
+                        <td>Game Boy Advance</td>
+                    </tr>
+        
+                    <tr>
+                        <th>004</th>
+                        <td>Sonic Advt 2</td>
+                        <td>Dreamcast</td>
+                    </tr>
+                <!--en mettent la balises colspan on peut faire en sorte que la cellule 
+                    qu'on veut, prennent 2 cases on met son attribut 
+                Avec la mention align="right" vous pouvez aligner un tableau à droite et avec la mention align="center" vous le centrez.
+                -->
+                    <tr>
+                        <th>005</th>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+     <!-- ctrl maj / pour créé un commentaire-->
+        <section id="exercice2">
+            <h2>Mon second tableau</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>001</th>
+                        <td>Pkmn Ruby</td>
+                        <td rowspan="2">Dreamcast</td>
+                        <td>2000</td>
+                    </tr>
+
+                    <tr>
+                        <th>002</th>
+                        <td>Rayman 2</td>
+                        <td>2001</td>
+                    </tr>
+
+                    <tr>
+                        <th>003</th>
+                        <td>Wario Ware</td>
+                        <td rowspan="2">Game Boy Advance</td>
+                        <td rowspan="2">2003</td>
+                    </tr>
+
+                    <tr>
+                        <th>004</th>
+                        <td>Sonic Advt 2</td>
+                    </tr>
+                    <tr>
+                        <th>005</th>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+       <!--mettre un tfoot seulement s'il y a n total. ne pas le mettre a tout va car cela casse le tableau--> 
+        <section id="exercice3">
+            <h2>Mon troisième tableau</h2>
+            <table border="1">
+                <thead>
+                    <tr><!--Toute l'entête du tableau-->
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody><!--Tout le corp du tableau-->
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advence</td>
+                        <td>30.00</td>
+                    </tr>
+        
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman 2</td>
+                        <td>Dreamcast</td>
+                        <td>40.00</td>
+                    </tr>
+        
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                        <td>Game Boy Advence</td>
+                        <td>25.00</td>
+                    </tr>
+        
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>Dreamcast</td>
+                        <td>40.00</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Articles</td>
+                        <td colspan="3">Rayman 2 + Sonic Advt 2</td>
+                    </tr>
+                </tbody>
+                <tfoot> 
+                    <tr>
+                        <td colspan="3">TOTAL</td>
+                        <td>80.00</td>
+                    </tr>
+                </tfoot>   
+            </table>
+        </section>
+
+        <section>
+            <h2>Mon emploi du temps</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="7"> <!--&nbsp; cela va nous permettre de pouvoir mettre un escpace inccecable avnt (!?)-->Mon emploi du temps&nbsp;:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>X</th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercred</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>WEEK-END</th>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="2">A.M</td>
+                        <td rowspan="2">Rentrée</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td rowspan="4">Libre</td>
+                        <td>TP n°5</td>
+                        <td rowspan="4">NETFLIX & CHILL</td>
+                    </tr>
+        
+                    <tr>
+                        <td>TP n°2</td>
+                        <td>TP n°4</td>
+                        <td>TP n°6</td>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="2">P.M</td>
+                        <td>HTML</td>
+                        <td rowspan="2">TP n°3</td>
+                        <td rowspan="2">Bilan</td>
+                        <td> JS</td>
+                    </tr>
+                
+                    <tr>
+                        <td>TP n°1</td>
+                        <td>PHP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+
+
+</html>

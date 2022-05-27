@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire-exercice">
+    <link rel="shortcut icon" href="../petit-chat.png" />
+
+    <title>Formulaire</title>
+</head>
+
+
+<body>
+
+    <h1> Boursaut Vénus -Les formulaires</h1>
+
+    <form action="#" method="POST">
+
+        <div>
+            <input type="radio" id="text" name="Individu-masculin">
+            <label for="text">Homme</label>
+
+            <input type="radio" id="Femme" name="Individu-feminin">
+            <label for="Femme">Femme</label>
+
+            <input type="radio" id="non" name="document">
+            <label for="non">Non renseigné</label>
+        </div>
+
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom">
+        </div>
+
+
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="personnelle">
+
+        </div>
+
+        <div>
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="16" max="99">
+
+        </div>
+
+        <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="tex">Message:</label>
+            <input type="text" id="tex" name="monTexte">
+        </div>
+
+        <div>
+
+            <input type="checkbox" id="contactChoice1" name="contact" value="email" checked>
+            <label for="contactChoice1"> En cochant cette case j'accepte les conditions<br> relative à l'utilisation de
+                mes données personnelles.<br>
+                (accéder aux mentions légales) </label>
+        </div>
+
+        <div>
+            <input type="submit" value="Envoyer le message">
+        </div>
+    </form>
+
+    <hr>
+
+
+    <h2>MON SECOND FORMULAIRE</h2>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>MON SECOND FORMULAIRE</legend>
+
+            <fieldset>
+                <legend>Identité</legend>
+                <div>
+                    <input type="radio" id="homme" name="humain">
+                    <label for="homme">Homme</label>
+
+                    <input type="radio" id="femme" name="humain">
+                    <label for="femme">Femme</label>
+
+                    <input type="radio" id="non-renseigner" name="texte">
+                    <label for="non-renseigner">Non renseigné</label>
+                </div>
+
+                <div>
+                    <label for="gens">Prénom :</label>
+                    <input type="text" id="gens" name="individue" placeholder="ex: Deschamps">
+                </div>
+
+                <div>
+                    <label for="personne">Nom :</label>
+                    <input type="text" id="personne" name="nom" placeholder="ex:Didier">
+                </div>
+
+                <div>
+                    <label for="description">Age :</label>
+                    <input type="text" id="description" name="age" placeholder="ex: 58">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Situation personnelle</legend>
+
+                <div>
+                    <input type="radio" id="seul" name="Individu">
+                    <label for="seul">Célibataire</label>
+
+                    <input type="radio" id="Mairie" name="Individus">
+                    <label for="Mairie">Marié</label>
+
+                    <input type="radio" id="décé" name="Individu(s)">
+                    <label for="décé">Veuf</label>
+
+                    <input type="radio" id="seul-couple" name="seul-accompagné">
+                    <label for="seul-couple">Union libre</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                <div>
+
+
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="ex: 0625487595">
+
+                    <label for="mail">Email *</label>
+                    <input type="email" id="mail" name="champEmail" placeholder="Saississez votre email">
+
+
+
+                </div>
+            </fieldset>
+
+            <br>
+
+
+
+            <input type="checkbox" id="1" name="contact" value="email" checked>
+            <label for="1"> En cochant cette case je confirme que les données renseignées<br>
+                sont exactes. </label>
+
+            <br>
+            <br>
+            <input type="submit" value="Transmettre mes données">
+        </fieldset>
+
+    </form>
+    <!--VOIR REMPLACE PLACEHOLDER PAR AUTRE CHOSES-->
+
+
+
+
+
+
+
+</body>
+
+</html>
